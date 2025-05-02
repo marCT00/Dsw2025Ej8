@@ -15,7 +15,7 @@ namespace Dsw2025Ej8.Data
 
 
 
-        public void Inicializar()
+        public List<CuentaBancaria> Inicializar()
         {
             _cuentas.Add(new CuentaDeAhorro("1", 3000, ["Ricardo"])
             {
@@ -33,10 +33,13 @@ namespace Dsw2025Ej8.Data
             {
                 LimiteDeDescubierto=15000
             });
+            return _cuentas;
 
         }
 
-        public List<CuentaBancaria> Cuentas{get => _cuentas;}
+
+
+      
 
         
 
